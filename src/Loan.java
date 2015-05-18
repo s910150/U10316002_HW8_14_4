@@ -1,5 +1,11 @@
+//U10316002
+//林鈺閔
+//HW8 14.4
+
 
 public class Loan {
+	
+  //variables
   private double annualInterestRate;
   private int numberOfYears;
   private double loanAmount;
@@ -33,9 +39,10 @@ public class Loan {
   public void setAnnualInterestRate(double annualInterestRate)
 		  throws IllegalArgumentException{
   	
+	//determine annual interest rate is bigger than 0 
   	if(annualInterestRate >=0)
   		this.annualInterestRate = annualInterestRate;
-  	else 
+  	else //promote user which is in exception
   		throw new IllegalArgumentException("Annual interest rate can't be negative");
     
   }
@@ -50,10 +57,11 @@ public class Loan {
   /** Set a new numberOfYears */
   public void setNumberOfYears(int numberOfYears)  
 		  throws IllegalArgumentException{
-	  	
+	//determine number of year is bigger than 0 
 	  	if(numberOfYears >=0)
 	  		this.numberOfYears = numberOfYears;
 	  	else 
+	  	//promote user which is in exception
 	  		throw new IllegalArgumentException("Number of years can't be negative");
 	    
     
@@ -70,10 +78,11 @@ public class Loan {
   public void setLoanAmount(double loanAmount) 
 	  
     throws IllegalArgumentException{
-    	
+	//determine loan amount is bigger than 0 
     	if(loanAmount >=0)
     		this.loanAmount = loanAmount;
     	else 
+    		//promote user which is in exception
     		throw new IllegalArgumentException("Loan amount can't be negative");
     	
     	
